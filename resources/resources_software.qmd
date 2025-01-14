@@ -39,11 +39,29 @@ format:
    - [GATK (Genome Analysis Toolkit)](https://gatk.broadinstitute.org/)  
   **Description**: A suite of tools for variant discovery and genotyping in high-throughput sequencing data.
 
+   - [Fastp](https://github.com/OpenGene/fastp)  
+  **Description**: A quality control tool for high-throughput sequence data.
+
    - [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
   **Description**: A quality control tool for high-throughput sequence data.
 
-   - [HISAT2](https://daehwankimlab.github.io/hisat2/)  
-  **Description**: A fast and sensitive alignment tool for mapping RNA-seq reads.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**R And Associated Software **
+
+   - [CRAN](https://cran.r-project.org)  
+  **Description**: The primary source for installing R on all operating systems.
+  
+   - [posit](https://posit.co/downloads/)
+  **Description**: For downloading RStudio Desktop (Free Software)
+  
+   - [The Bioconductor Project](https://bioconductor.org)
+  **Description**: Home for many R Packages used during bioinformatics analysis
 
 <br>
 
@@ -78,12 +96,15 @@ format:
 
    - [EdgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)  
   **Description**: R package for differential expression analysis of RNA-seq data.
+  
+   - [HISAT2](https://daehwankimlab.github.io/hisat2/)  
+  **Description**: A fast and sensitive alignment tool for mapping RNA-seq reads.  
 
    - [STAR](https://github.com/alexdobin/STAR)  
   **Description**: An RNA-seq aligner optimized for ultrafast alignment.
 
    - [Salmon](https://salmon.readthedocs.io/en/latest/)  
-  **Description**: A lightweight tool for transcript quantification from RNA-seq data.
+  **Description**: A lightweight tool for transcript-level quantification from RNA-seq data.
   
    - [RNA-seq Analysis with Limma, Glimma, and edgeR](https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/limmaWorkflow.html)  
   **Description**: A step-by-step guide for performing RNA-seq differential gene expression analysis using edgeR, Limma, and Glimma in R.
@@ -114,9 +135,6 @@ format:
 
    - [IGV (Integrative Genomics Viewer)](https://software.broadinstitute.org/software/igv/)  
   **Description**: A tool for visualizing large-scale genomic datasets.
-
-   - [RStudio](https://posit.co/)  
-  **Description**: An integrated development environment (IDE) for R programming.
 
    - [Tableau Public](https://public.tableau.com/)  
   **Description**: A data visualization platform for creating interactive dashboards.
@@ -180,14 +198,17 @@ format:
 
 ### <span style="color: #95b540; font-weight: bold">**Additional Useful Tools**
 
+   - [Cytoscape](https://cytoscape.org/)  
+  **Description**: A tool for visualization and analysis of networks.
+  
+   - [JupyterLabs](https://jupyter.org)
+  **Description**: Home for Jupyter Notebooks   
+  
    - [Docker](https://www.docker.com/)  
   **Description**: A platform for creating and running containers for reproducible workflows.
 
    - [Singularity](https://sylabs.io/)  
   **Description**: A container system optimized for HPC environments.
-
-   - [Cytoscape](https://cytoscape.org/)  
-  **Description**: A tool for visualization and analysis of networks.
 
    - [Galaxy](https://usegalaxy.org/)  
   **Description**: An open-source platform for reproducible bioinformatics research.

@@ -78,6 +78,23 @@ Online workbook covering multiple topics related to bioinformatics. Includes vid
 
 <br>
 
+### <span style="color: #95b540; font-weight: bold"> **Bioconductor – Using R for Bioinformatics**
+
+**Website: [The Bioconductor Help Page](https://www.bioconductor.org/help/)**
+
+The page has a wealth of workflows and resources across many areas, including a help forum and slack team.
+Some Software Carpentry Workshops which may also be helpful are:
+   - [Data science with Bioconductor](https://carpentries-incubator.github.io/bioc-intro/) 
+   - [Analysis and interpretation of bulk RNA sequencing data with Bioconductor](https://carpentries-incubator.github.io/bioc-rnaseq/)
+   - [Analysis and interpretation of single-cell RNA sequencing data with Bioconductor](https://carpentries-incubator.github.io/bioc-scrnaseq/)
+   - [An introduction to the Bioconductor Project](https://carpentries-incubator.github.io/bioc-project/)
+
+<br>
+
+---
+
+<br>
+
 ### <span style="color: #95b540; font-weight: bold"> **QCIF Training – Statistical Comparisons Using R**
 
 **Website: [Statistical Comparisons Using R](https://qcif-training.github.io/StatisticalComparisonsUsingR/index.html)**
@@ -247,6 +264,7 @@ Learn to develop and execute scalable, reproducible pipelines using WDL. Feature
    - [ABACBS 2018 Workshops](https://www.abacbs.org/conference2018/workshops)  
    - [ABACBS 2019 Workshops](https://www.abacbs.org/conference2019/workshops0)  
    - [ABACBS 2021 Workshops](https://www.abacbs.org/conference2021/workshops)  
+   - [RAdelaide 2024](https://blackochrelabs.au/RAdelaide24/)
 
    - [Advanced R Documentation](http://adv-r.had.co.nz/)  
    - [Bioinformatics Babraham Training](https://www.bioinformatics.babraham.ac.uk/training/) 
