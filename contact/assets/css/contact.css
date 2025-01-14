@@ -55,7 +55,7 @@
 
 /* Scrollable tables */
 .scrollable-table {
-    max-height: 300px; /* Limit the vertical height of the table */
+    max-height: 600px; /* Limit the vertical height of the table */
     overflow-y: auto; /* Enable vertical scrolling for tables */
     overflow-x: auto; /* Enable horizontal scrolling for tables */
     border: 1px solid #ddd; /* Add a subtle border around the scrollable table */
