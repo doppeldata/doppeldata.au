@@ -1,0 +1,155 @@
+---
+title: "Resources - Github"
+description: ""
+date: ""
+toc: true
+toc-depth: 8
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Github Resources**]{.large}
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Statistical Analysis and Experimental Design**
+
+   - **[Statistical Comparisons Using R](https://qcif-training.github.io/StatisticalComparisonsUsingR/index.html)**  
+  Covers hypothesis testing, correlation analysis, ANOVA, and visualization in R.
+
+   - **[Experimental Design](https://smcclatchy.github.io/exp-design/)**  
+  Guide to basic experimental design principles.
+
+   - **[Statistical Experimental Design](https://smcclatchy.github.io/statistical-experimental-design-old/)**  
+  Advanced guide to statistical design for experiments.
+
+   - **[Statistical Inference for Biology](https://carpentries-incubator.github.io/statistical-inference-for-biology/)**  
+  Statistical modeling for biological data analysis.
+
+   - **[Introductory Statistics with R](https://smcclatchy.github.io/introductory-statistics-with-r/)**  
+  Basics of statistical analysis in R, including data exploration and hypothesis testing.
+
+   - **[Inference for High-dimensional Data](https://smcclatchy.github.io/inference-for-high-dimensional-data/)**  
+  Techniques for analyzing high-dimensional datasets.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**RNA-Seq Analysis**
+
+   - **[RNA-Seq QC and Alignment](https://dmgatti.github.io/rna-seq-lesson/03-qc-of-sequencing-results/index.html)**  
+  Detailed guide on quality control and alignment for RNA-Seq data.
+
+   - **[Analyzing RNA-Seq Data with DESeq2](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)**  
+  Comprehensive tutorial on differential expression analysis.
+
+   - **[Beginner Guide to DESeq2](https://bioc.ism.ac.jp/packages/2.14/bioc/vignettes/DESeq2/inst/doc/beginner.pdf)**  
+  Beginner-friendly guide for RNA-Seq analysis with DESeq2.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Single-Cell and Spatial Transcriptomics**
+
+   - **[Single Cell RNA-Seq Training](https://dmgatti.github.io/SingleCellRNAseq/)**  
+  Introductory course for single-cell RNA sequencing.
+
+   - **[Spatial Transcriptomics](https://smcclatchy.github.io/spatial-transcriptomics/)**  
+  Comprehensive guide on spatial transcriptomics methodologies.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**QTL Mapping**
+
+   - **[QTL Mapping in Mice](https://smcclatchy.github.io/mapping/)**  
+  QTL mapping methodology specifically for mouse genetics.
+
+   - **Human QTL Mapping:**  
+   
+     - [PubMed Resource](https://pubmed.ncbi.nlm.nih.gov/21085122/)  
+     - [Nature Protocols Resource](https://www.nature.com/articles/nprot.2010.116)  
+    Includes scripts, data, and links to related software.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**General Bioinformatics Training**
+
+   - **[Intro to Bash](https://uofabioinformaticshub.github.io/Intro-Bash/)**  
+  Beginner-friendly Bash tutorial for bioinformatics workflows.
+
+   - **[Intro to NGS](https://uofabioinformaticshub.github.io/Intro-NGS/)**  
+  Covers fundamentals of Next-Generation Sequencing (NGS).
+
+   - **[Intro to R for Genomics](https://uofabioinformaticshub.github.io/Intro_R_FIB_2019/)**  
+  Introduction to R for genomic data analysis.
+
+   - **[Genomics Applications](https://uofabioinformaticshub.github.io/genomics_applications/)**  
+  Practical guides for genomic data applications.
+
+   - **[Transcriptomics Applications](https://uofabioinformaticshub.github.io/transcriptomics_applications/)**  
+  Tutorials for transcriptomics data analysis.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Specialized Training**
+
+   - **[Intro R Adelaide](https://uofabioinformaticshub.github.io/RAdelaide-July-2016/)**  
+  Introductory R workshop content.
+
+   - **[Intro to Genomics (December 2016)](https://uofabioinformaticshub.github.io/Intro_R_Genomics_Dec_2016/)**  
+  Workshop materials for genomic data analysis in R.
+
+   - **[Roseworthy R Workshop (May 2017)](https://uofabioinformaticshub.github.io/Roseworthy-R-20170501/README.html)**  
+  Covers R applications in bioinformatics.
+
+   - **[Spring Into Bioinformatics](https://uofabioinformaticshub.github.io/Spring_Into_Bioinformatics/)**  
+  Comprehensive bioinformatics workshop resources.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Pipeline Best Practices**
+
+   - **[Best Practices](https://uofabioinformaticshub.github.io/BestPractices/)**  
+  Guidelines and standards for bioinformatics workflows.
+
+<br>
+
+---

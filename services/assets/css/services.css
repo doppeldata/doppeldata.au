@@ -1,0 +1,33 @@
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    background-color: #ffffff;
+}
+
+table th, table td {
+    padding: 10px 15px;
+    text-align: left;
+}
+
+/* Table Header Styling */
+table th {
+    background-color: #808080 !important; /* Black background for the header */
+    color: #abc761 !important; /* Green text for the header */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* First column pink */
+table td:first-child {
+    color: #e42300 !important; /* Ensures all first-column text is pink */
+    font-weight: bold;
+}
+
+
+table tr:hover {
+    background-color: #fff0ce;
+    color: #2c3e50;
+}

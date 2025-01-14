@@ -1,0 +1,317 @@
+---
+title: "Services"
+description: ""
+date: ""
+toc: true
+number-sections: false
+format:
+  html:
+    css: assets/css/services.css
+    page-layout: full
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Services**]{.large}
+
+<br>
+
+We are excited to collaborate and provide support to those who may lack the in-house expertise required to tackle complex genetic and data-driven challenges. 
+
+Explore our services below, and feel free to [reach out](mailto:services@doppeldata.au) with any requests — whether within or beyond the scope of what’s listed.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #2a71d0; font-weight: bold"> **Service Categories**
+
+<br>
+
+<style>
+/* Apply styles specifically to the targeted table */
+#all-red-rows-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black; /* Add a strong border for this table */
+}
+
+/* Style all table rows in this specific table */
+#all-red-rows-table tr {
+  background-color: #ffa494 !important; /* Blue background for all rows */
+  color: white !important; /* White text for contrast */
+}
+
+#all-red-rows-table th, #all-red-rows-table td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Ensure list items have consistent bullet points */
+#all-red-rows-table td ul {
+  list-style-type: disc; /* Standard bullet points for all lists */
+  margin: 0;
+  padding-left: 20px; /* Add spacing for better readability */
+  color: white; /* Ensure bullet points are visible (white) */
+}
+
+#all-red-rows-table td ul li {
+  color: white; /* Ensure text remains white inside lists */
+}
+
+/* Add hover effect for table rows */
+#all-red-rows-table tr:hover {
+  background-color: #ffe09b !important; /* Light yellow background on hover */
+}
+
+#all-red-rows-table tr:hover td,
+#all-red-rows-table tr:hover td ul li,
+#all-red-rows-table tr:hover th {
+  color: #2c3e50 !important; /* Dark gray text on hover */
+}
+</style>
+
+
+<!-- Add an ID to this specific table -->
+<table id="all-red-rows-table">
+  <tr>
+    <th>Category</th>
+    <th>Services</th>
+  </tr>
+  <tr>
+    <td>['Omics Data Analysis](services.html#omics-data-analysis)</td>
+    <td>
+      <ul>
+        <li>Processing and analysis of NGS and multi-omics data, including:</li>
+        <ul>
+        <ul>
+          <li>DNA-seq</li>
+          <li>RNA-seq</li>
+          <li>scRNA-seq</li>
+          <li>ChIP-seq, and more.</li>
+        </ul>
+        </ul>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>[Data Integration & Mining](services.html#data-integration-mining)</td>
+    <td>
+      <ul>
+        <li>Integration of biomedical datasets.</li>
+        <li>Advanced data mining techniques for complex data insights.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>[Statistical & AI Modeling](services.html#statistical-ai-modeling)</td>
+    <td>
+      <ul>
+        <li>Machine learning and AI applications for data analysis.</li>
+        <li>Development of statistical models for:</li>
+        <ul>
+        <ul>
+        <li>Genomic</li>
+        <li>Clinical</li>
+        <li>Environmental data</li>
+        </ul>
+        </ul>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>[Evolutionary Biology](services.html#evolutionary-biology)</td>
+    <td>
+      <ul>
+        <li>Metagenomics to study microbial communities and their functions.</li>
+        <li>Phylogenetics to analyze evolutionary relationships.</li>
+        <li>Population genetics for diversity and evolutionary studies.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>[Software & IT Solutions](services.html#software-it-solutions)</td>
+    <td>
+      <ul>
+        <li>Custom pipeline and software development.</li>
+        <li>Database solutions for managing large-scale datasets.</li>
+        <li>Cloud-based bioinformatics tools for scalable analysis.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>[Training and Education](services.html#training-and-education)</td>
+    <td>
+      <ul>
+        <li>Workshops on bioinformatics and data analysis techniques.</li>
+        <li>Training in advanced computational tools and methodologies.</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+#### **Service Descriptions**
+
+##### **Omics Data Analysis**  
+::: small
+We provide comprehensive omics analysis services, including:  
+
+- **NGS Data Processing**: End-to-end workflows for RNA-seq, ChIP-seq, whole-genome resequencing, and targeted sequencing, including preprocessing, alignment, and variant calling.
+- **Single-Cell Sequencing**: scRNA-seq and scATAC-seq analysis to uncover cellular heterogeneity, identify trajectories, and explore gene expression profiles.
+- **Multi-Omics Integration**: Combine genomics, transcriptomics, proteomics, and metabolomics data to create a unified biological model.
+- **Microarray Analysis**: Interpret data from gene expression, SNP arrays, DNA methylation, and copy number variation (arrayCGH).
+:::
+
+##### **Data Integration & Mining**  
+::: small
+Our services are designed to unlock insights from complex datasets:  
+
+- **Biomedical Data Integration**: Combine diverse datasets to reveal hidden patterns, causal relationships, or associations.
+- **Advanced Data Mining**: Develop customized methods to extract actionable insights from large, multidimensional datasets.
+- **Causal Inference**: Identify relationships between measured variables for predictive or diagnostic purposes.
+:::
+
+##### **Statistical & AI Modeling**  
+::: small
+We leverage advanced statistical and AI methods to support data-driven research:
+
+- **Statistical Modeling**: Hypothesis testing, regression analysis, multivariate modeling, and survival analysis tailored to biological data.
+- **AI and Machine Learning Models**: Custom-built models for classification, clustering, genomic predictions, and high-dimensional data analysis.
+- **Deep Learning**: Apply neural networks to genomic sequence analysis, feature extraction, and other complex challenges.
+:::
+
+##### **Evolutionary Biology**
+::: small
+We specialize in evolutionary studies and microbial ecology:
+
+- **Metagenomics**: Analyze microbial communities and their functional roles in ecosystems.
+- **Phylogenetics**: Reconstruct evolutionary histories and relationships using molecular data.
+- **Population Genetics**: Investigate genetic diversity, gene flow, and evolutionary pressures within populations.
+:::
+
+##### **Software & IT Solutions**  
+::: small
+Our IT services are tailored to meet specific research and operational needs:
+
+- **Pipeline Development**: Design and implement scalable pipelines (Nextflow, WDL, Docker, Singularity) for data processing and analysis.
+- **Custom Software**: Develop bioinformatics tools and applications using Python, R, and other technologies.
+- **Database Solutions**: Create and manage relational and non-relational databases for large-scale biomedical data.
+- **Cloud-Based Infrastructure**: Deploy solutions for scalable and efficient data analysis workflows.
+:::
+
+##### **Training and Education**
+::: small
+We offer hands-on training and educational workshops for researchers and professionals:
+
+- **Genomics and Transcriptomics**: Learn RNA-seq and ChIP-seq data analysis, including preprocessing and pathway analysis.
+- **Single-Cell Sequencing**: Explore scRNA-seq and scATAC-seq data processing, clustering, and trajectory inference.
+- **Machine Learning and AI**: Build models for genomic data analysis, including feature selection, clustering, and deep learning.
+- **Data Visualization**: Master tools like R (ggplot2) and Python (Matplotlib, Seaborn) for insightful visualizations.
+- **Pipeline Development**: Hands-on sessions for creating automated workflows using scripting and programming languages.
+:::
+
+##### **General Services**
+::: small
+We are also happy to support you in:
+
+- **Grant Writing Assistance**: Craft effective grant proposals with a focus on bioinformatics research methodologies.
+- **Healthcare Treatment**: Analyze patient data for precision medicine and personalized treatment strategies.
+
+:::
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #2a71d0; font-weight: bold">  **Service Tracks**
+
+<br>
+
+<style>
+/* Apply styles specifically to the targeted table */
+#all-blue-rows-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid black; /* Add a strong border for this table */
+}
+
+/* Style all table rows in this specific table */
+#all-blue-rows-table tr {
+  background-color: #87adf1 !important; /* Blue background for all rows */
+  color: white !important; /* White text for contrast */
+}
+
+#all-blue-rows-table th, #all-blue-rows-table td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Add hover effect for table rows */
+#all-blue-rows-table tr:hover {
+  background-color: #ffe09b !important; /* Light yellow background on hover */
+}
+
+#all-blue-rows-table tr:hover td,
+#all-blue-rows-table tr:hover th {
+  color: #2c3e50 !important; /* Dark gray text on hover */
+}
+</style>
+
+<table id="all-blue-rows-table">
+  <tr>
+    <th>Track</th>
+    <th>Description</th>
+    <th>Pricing</th>
+  </tr>
+  <tr>
+    <td>Track 1</td>
+    <td>Routine analysis for NGS, single-cell sequencing, and microarray data.</td>
+    <td>Quoted by sample numbers</td>
+  </tr>
+  <tr>
+    <td>Track 2</td>
+    <td>Custom engineering work, including pipelines, multi-omics integration, and AI models.</td>
+    <td>Flat-rate quote</td>
+  </tr>
+  <tr>
+    <td>Track 3</td>
+    <td>Exploratory, hypothesis-driven research requiring iterative testing and strategy adjustments.</td>
+    <td>Hourly rate quote</td>
+  </tr>
+</table>
+
+::: small
+-   **Discounts**: Discounts may apply for bundled services or long-term contracts. Contact us to discuss your needs.
+-   **Flexible Payment Options**: We offer flexible payment plans to suit different budget requirements.
+:::
+
+<br>
+
+---
+
+<br>
+
+For further information or to schedule a consultation, please [contact us](mailto:services@doppeldata.au).
+
+This document is updated regularly to reflect the latest offerings and prices.
+

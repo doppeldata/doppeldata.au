@@ -1,0 +1,75 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  google-analytics: 'G-609K9474MX'
+  title: ""
+  site-url: https://www.doppeldata.au/
+  favicon: assets/images/image3-Photoroom.png
+  navbar:
+    logo: assets/images/darwinlabs_transparant-Photoroom.png
+    href:  https://www.doppeldata.au/
+    logo-alt: "logo"
+    collapse-below: lg
+    pinned: true
+    left:
+      - text: "Doppeldata"
+    right:
+      - text: "Home" 
+        href: index.qmd
+      - text: "Resources"
+        href: resources/resources.html
+      - text: "Events"
+        href: events/events.html
+      - text: "Services"
+        href: services/services.html
+      - text: "News"
+        href: news/news.html
+      - text: "About"
+        href: about/about.html
+      - text: "Contact"
+        href: contact/contact.html
+  page-footer:
+    border: false
+    left: "{{< meta current_year >}} [Doppeldata](https://doppeldata.au) | [AGPL-3 License](https://choosealicense.com/licenses/agpl-3.0/)"
+    right: "Published with [Quarto](https://quarto.org/) v{{< meta quarto_version >}}"
+
+
+format:
+  html:
+    quarto-required: ">=1.4.0"
+    include-in-header: "assets/include_head.html"
+    include-before-body: "assets/include_body_before.html"
+    include_after_body: "assets/include_body_after.html"
+    theme: "assets/css/styles.scss"
+    smooth-scroll: true
+    toc: true
+    toc-depth: 4
+    toc-location: right
+    number-sections: true
+    number-depth: 4
+    code-fold: false
+    code-tools: false
+    code-copy: true
+    code-overflow: wrap
+    df-print: paged
+    standalone: false
+    fig-align: left
+    title-block-banner: "assets/images/h6qh5880_breaking_into_bioinformatics_1024x592_vo_banner.jpg"
+    subtitle: ""
+    callout-icon: true
+    date:  last-modified
+    date-format: "DD-MMM-YYYY"
+    image: ""
+    lightbox: auto
+
+execute:
+  eval: true
+  echo: true
+  warning: false
+  message: false
+  freeze: auto
+
+filters:
+  - assets/custom.lua

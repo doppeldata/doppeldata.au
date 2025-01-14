@@ -1,0 +1,139 @@
+---
+title: "Resources - Books"
+description: ""
+date: ""
+toc: true
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Books**]{.large}
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **R Programming**
+
+<br>
+
+#### <span style="color: #E69F00; font-weight: bold"> **R for Graduate Students**  
+   [Link to book](https://bookdown.org/yih_huynh/Guide-to-R-Book/how-to-use-this-guide.html)  
+   Written by a behavioral neuroscience HDR student, this beginner’s guide to R covers:  
+   
+   - Installation and set-up  
+   - Keyboard shortcuts  
+   - R vocabulary and naming conventions  
+   - Basic data manipulation (`mutate`, `filter`, `summarize`)  
+   - An introduction to plotting with `ggplot`
+
+#### <span style="color: #E69F00; font-weight: bold"> **R for Data Science (2e)**  
+   [Link to book](https://r4ds.hadley.nz/)  
+   A comprehensive resource for learning R and the tidyverse. Topics include:  
+   
+   - Data cleaning, transformation, and visualization  
+   - Writing functions  
+   - Creating reproducible workflows  
+
+#### <span style="color: #E69F00; font-weight: bold"> **R Graphics Cookbook**  
+   [Link to book](https://r-graphics.org/index.html)  
+   Offers recipes for creating and customizing visualizations using R, including `ggplot2` and base R.  
+   Features practical examples and data preparation techniques.
+
+#### <span style="color: #E69F00; font-weight: bold"> **Advanced R**  
+   [Link to book](https://adv-r.hadley.nz/index.html)  
+   Designed for intermediate users, it covers advanced topics such as:  
+   
+   - Environments and debugging  
+   - Object-oriented programming  
+   - Functional programming  
+
+#### <span style="color: #E69F00; font-weight: bold"> **R Packages (2e)**  
+   [Link to book](https://r-pkgs.org/)  
+   A detailed guide to creating and maintaining R packages.  
+   Includes topics like documentation and deployment.
+
+#### <span style="color: #E69F00; font-weight: bold"> **Mastering Shiny**  
+   [Link to book](https://mastering-shiny.org/)  
+   Focused on building Shiny web applications in R, this book covers:  
+   
+   - Reactive programming  
+   - App design and deployment  
+
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Statistics**
+
+<br>
+
+#### <span style="color: #E69F00; font-weight: bold"> **R for Statistical Analysis**  
+   [Link to book](https://bookdown.org/siju_swamy/Stat_Lab/)  
+  Statistical course covering basic statistics and how to perform statistical analysis in R. Introduces basic statistics in R, including: 
+  
+   - an introduction to using R; 
+   - performing exploratory data analysis; 
+   - descriptive statistics and probability; 
+   - Correlation and regression analysis; 
+   - Inferential statistics and hypothesis testing.
+ 
+
+#### <span style="color: #E69F00; font-weight: bold"> **Statistical Inference via Data Science**  
+   [Link to book](https://moderndive.com/v2/index.html)  
+Online book covering data science and statistics in R.  Begins with data visualisation and wrangling. Covers several statistics topics including – linear regression, multiple regression, sampling, estimation and confidence intervals, and hypothesis testing. 
+
+#### <span style="color: #E69F00; font-weight: bold"> **JABSTB: Statistical Design and Analysis of Experiments with R**  
+   [Link to book](https://tjmurphy.github.io/jabstb/)  
+Online book designed for undergraduate biostats students. Includes both R and statistical basics: sampling, data/variable classification, types of errors, p-values, data distributions, statistics for categorical variables, nonparametric statistical tests, t-tests, ANOVA, survival analysis and more. Final chapter (50) covers RNA-seq with edgeR/limma.
+
+
+#### <span style="color: #E69F00; font-weight: bold"> **Introduction to bioinformatics workbook** 
+[Link to book](https://bioinformaticsworkbook.org/about.html#gsc.tab=0)
+  Online workbook covering multiple topics related to bioinformatics. Includes videos, detailed explanations and worked examples with links to additional resources. Very extensive covering:  
+  
+   - Command line basics and useful programs (includes Unix basic, introduction to HPC and Bioawk)
+   - Project Management (Introduction to Slack, GitHub and Markdown)
+   - Introduction to BLAST
+   - Experimental Design
+   - Data acquisition and wrangling (including file transfer, FASTA manipulation; Manipulating Excel data sheets and NCBI SRA)
+   - Bioinformatics Terminology (Includes section on file formats)
+   - RNA Sequencing (including section on DGE with DESeq2 and single cell analysis)
+   - Genome assembly and Annotation (multiple sections and tools)
+   - Comparative genomics
+   - Variant Discovery (including FreeBays and GATK Best Practices for DNA-seq)
+   - Metagenomics
+   - Genome Repeat Identification
+   - ATAC-Sequencing
+   - Data visualisation
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Other**
+
+<br>
+
+#### <span style="color: #E69F00; font-weight: bold"> **Data Munging with R**  
+   [Link to book](https://www.manning.com/books/beyond-spreadsheets-with-r?a_aid=datamungingwithr&a_bid=1dc44480)
+

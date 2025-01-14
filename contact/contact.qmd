@@ -1,0 +1,176 @@
+---
+title: "Contact Us"
+description: ""
+date: ""
+toc: true
+number-sections: false
+favicon: ../assets/images/image3-Photoroom.png
+format:
+  html:
+    css: "assets/css/contact.css"
+    page-layout: full
+    other-links:
+      - text: "📧 Mail"
+        href: mailto:info@doppeldata.au
+      - text: "Github"
+        href: https://github.com/doppeldata
+    code-fold: true
+execute:
+  echo: false
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+## <span style="color: #cc0000; font-weight: bold"> [**Contact Us**]{.large}
+
+<br/>
+
+Please fill out the form below or connect with us through one of our channels. 
+
+If we’re unable to assist, we can help connect you with someone who can. 
+
+Alternatively, explore the contact details of [Bioinformaticians/Statistical Geneticists](contact.html#adelaide-bioinformatics-community) in the Adelaide community who might be able to provide support.
+
+<br/>
+
+<form
+  action="https://formspree.io/f/mgvvpbzb"
+  method="POST" 
+  style="max-width: 600px; margin: auto;">
+  
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" 
+         style="width: 100%; border: 2px solid green; padding: 8px;" 
+         required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" 
+         style="width: 100%; border: 2px solid green; padding: 8px;" 
+         required><br><br>
+
+  <label for="subject">Subject:</label><br>
+  <select id="subject" name="subject" 
+          style="width: 100%; border: 2px solid green; padding: 8px;">
+    <option value="" disabled selected>Select a subject</option>
+    <option value="Services, Costs &/or Quote">Services, Costs &/or Quote</option>
+    <option value="Careers/Employment Opportunities">Careers/Employment Opportunities</option>
+    <option value="Investment">Investment</option>
+    <option value="Media">Media</option>
+    <option value="General Enquiries">General Enquiries</option>
+  </select><br><br>
+
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message" rows="5" 
+            style="width: 100%; border: 2px solid green; padding: 8px;" 
+            required></textarea>
+
+  <input type="submit" value="Submit" 
+         style="background-color: #E69F00; color: white; padding: 10px 20px; border: none; cursor: pointer;">
+</form>
+
+<br><br>
+
+## <span style="color: #2a71d0; font-weight: bold"> **Adelaide Computational Biology Community**
+
+Below is a list of bionformaticans, statistical geneticists, computational biologist and data scientist in the Adelaide area.  
+
+If you would like to add your contact details, please [reach out](mailto:community@doppeldata.au). 
+
+<br>
+
+```{python, include=FALSE}
+import pandas as pd
+from IPython.display import display, HTML
+
+# Define the path to your local Excel file
+EXCEL_FILE = "assets/data/Adelaide bioinformaticians.xlsx"  # Replace with the actual path to your Excel file
+
+# Load data from the Excel file
+people_df = pd.read_excel(EXCEL_FILE, sheet_name="People").fillna("")
+institutions_df = pd.read_excel(EXCEL_FILE, sheet_name="Institutions", index_col="Code")
+
+# Map institution URLs
+institution_urls = dict(institutions_df[["Institute", "url"]].values)
+
+# Replace institution codes with full names
+institution_codes = dict(institutions_df["Institute"])
+people_df["Institute"].replace(institution_codes, inplace=True)
+
+# Relabel columns
+column_headers = {
+    "Name": "Full Name",
+    "email": "Email Address",
+    "ORCID": "ORCID Link",
+    "student": "Is Student",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "research_interests": "Research Interests"
+}
+people_df = people_df.rename(columns=column_headers)
+
+# Add clickable ORCID links
+def format_orcid(orcid):
+    if orcid:
+        return f"<a href='https://orcid.org/{orcid}' target='_blank'>{orcid}</a>"
+    return ""
+
+people_df["ORCID Link"] = people_df["ORCID Link"].apply(format_orcid)
+
+# Generate vertical tabs and content for institutions
+tab_headers = []
+tab_contents = []
+
+for idx, (institute, group) in enumerate(people_df.groupby("Institute")):
+    # Create a URL-friendly tab ID
+    tab_id = institute.lower().replace(" ", "-").replace("/", "-")
+    
+    # Generate the tab header
+    active_class = "active" if idx == 0 else ""
+    tab_headers.append(f'<li class="nav-item"><a class="nav-link {active_class}" id="{tab_id}-tab" data-bs-toggle="tab" href="#{tab_id}" role="tab">{institute}</a></li>')
+
+    # Add institution URL if available
+    institution_url = institution_urls.get(institute, "")
+    url_html = f"<p><a href='{institution_url}' target='_blank'>{institution_url}</a></p>" if institution_url else ""
+    
+    # Generate the table for this institution
+    html_table = group.to_html(
+        index=False,
+        escape=False,
+        columns=[
+            "Full Name", "Email Address", "ORCID Link", "Is Student", 
+            "GitHub", "Twitter", "Research Interests"
+        ],
+        justify="center",
+        border=1,
+        classes="styled-table"
+    )
+    
+    # Generate the tab content, wrapping the table in a scrollable div
+    active_class = "show active" if idx == 0 else ""
+    tab_contents.append(f'<div class="tab-pane fade {active_class}" id="{tab_id}" role="tabpanel"><h4>{institute}</h4>{url_html}<div class="scrollable-table">{html_table}</div></div>')
+
+# Combine tabs into a single HTML structure
+tabs_html = f"""
+<div class="tab-container">
+    <ul class="nav nav-tabs" id="institutionTabs" role="tablist">
+        {''.join(tab_headers)}
+    </ul>
+    <div class="tab-content" id="institutionTabContent">
+        {''.join(tab_contents)}
+    </div>
+</div>
+"""
+
+# Display the final HTML with tabs
+display(HTML(tabs_html))
+```

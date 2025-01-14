@@ -1,0 +1,172 @@
+---
+title: "Resources - Cheatsheets"
+description: ""
+date: ""
+toc: true
+toc-depth: 8
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Cheatsheets**]{.large}
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **General Programming Cheatsheets**
+
+<br>
+
+   - **[Python Cheatsheet](https://github.com/gto76/python-cheatsheet)**  
+  A detailed Python reference covering syntax, data structures, functions, and libraries.
+
+   - **[RStudio Cheatsheets](https://posit.co/resources/cheatsheets/)**  
+  Includes cheat sheets for R, ggplot2, dplyr, tidyr, shiny, and other R packages.
+
+   - **[Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)**  
+  Quick reference for Git commands and workflows.
+
+   - **[Markdown Cheatsheet](https://www.markdownguide.org/cheat-sheet/)**  
+  A handy guide for writing Markdown syntax.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **R Programming and Data Visualization**
+
+#### General R Cheatsheets
+
+   - **[ggplot2 Cheatsheet](https://posit.co/resources/cheatsheets/)**  
+  A guide for creating data visualizations with ggplot2 in R.
+
+   - **[dplyr Cheatsheet](https://posit.co/resources/cheatsheets/)**  
+  Reference for data manipulation functions in R.
+
+   - **[R Markdown Cheatsheet](https://posit.co/resources/cheatsheets/)**  
+  Tips for creating reproducible reports using R Markdown.
+
+   - **[RStudio Shortcuts](https://posit.co/resources/cheatsheets/)**  
+  Keyboard shortcuts to enhance productivity in RStudio.
+
+
+#### **Color Palettes for R Visualizations**
+
+   - **[Top R Color Palettes](https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/)**  
+  Examples include `viridis`, `RColorBrewer`, `wesanderson`, and `ggsci`.
+
+   - **[R Graph Gallery](https://r-graph-gallery.com/)**  
+  A collection of graph examples with customization tips for R visualizations.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Linux and Command-Line Tools**
+
+   - **[Unix Command Cheatsheet](https://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)**  
+  Quick reference for common Unix/Linux commands.
+
+   - **[Bioawk Cheatsheet](https://github.com/lh3/bioawk)**  
+  Commands and usage examples for processing biological data with Bioawk.
+
+   - **[Bash Scripting Cheatsheet](https://devhints.io/bash)**  
+  Handy guide for writing Bash scripts and automating tasks.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Bioinformatics-Specific Cheatsheets**
+
+   - **[Bioconductor Cheatsheet](https://bioconductor.org/help/workflows/)**  
+  Guide to using Bioconductor packages in R for bioinformatics.
+
+   - **[FASTQ File Format Guide](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)**  
+  Quick guide to understanding and interpreting FASTQ files.
+
+   - **[Nextflow Cheatsheet](https://www.nextflow.io/docs/latest/cheatsheet.html)**  
+  Quick reference for building workflows with Nextflow.
+
+   - **[Snakemake Cheatsheet](https://snakemake.readthedocs.io/en/stable/)**  
+  Guide to creating reproducible workflows with Snakemake.
+
+   - **[Genome Analysis Toolkit (GATK) Cheatsheet](https://gatk.broadinstitute.org/)**  
+  A summary of GATK commands and workflows for variant calling.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Data Analysis and Visualization**
+
+   - **[Pandas Cheatsheet](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)**  
+  Reference for data manipulation and analysis with Pandas in Python.
+
+   - **[Matplotlib Cheatsheet](https://github.com/matplotlib/cheatsheets)**  
+  Visualization guide for Matplotlib in Python.
+
+   - **[Seaborn Cheatsheet](https://seaborn.pydata.org/examples/index.html)**  
+  Reference for statistical data visualization using Seaborn.
+
+   - **[Tableau Shortcuts](https://interworks.com/blog/cklok/2018/02/07/quick-reference-guide-for-tableau-shortcuts/)**  
+  Productivity tips for Tableau users.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Machine Learning and Statistics**
+
+   - **[Scikit-learn Cheatsheet](https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)**  
+  Overview of machine learning algorithms in Scikit-learn.
+
+   - **[TensorFlow Cheatsheet](https://www.tensorflow.org/resources/learn)**  
+  Quick guide to TensorFlow's key features and APIs.
+
+   - **[Statistics with R Cheatsheet](https://bookdown.org/siju_swamy/Stat_Lab/)**  
+  Summary of statistical methods and their implementation in R.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **General Coding and Tools**
+
+   - **[Regex Cheatsheet](https://www.rexegg.com/regex-quickstart.html)**  
+  Comprehensive guide to regular expressions (Regex).
+
+   - **[Docker Cheatsheet](https://dockerlabs.collabnix.com/docker/cheatsheet/)**  
+  Reference for Docker commands and container management.
+
+   - **[Singularity Cheatsheet](https://sylabs.io/guides/3.5/user-guide/quick_start.html)**  
+  Quick start guide for working with Singularity containers.
+
+---

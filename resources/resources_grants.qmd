@@ -1,0 +1,31 @@
+---
+title: "Resources - Grants"
+description: ""
+date: ""
+toc: true
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+    embed-resources: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Grants**]{.large}
+
+<br>
+
+Grants to come...

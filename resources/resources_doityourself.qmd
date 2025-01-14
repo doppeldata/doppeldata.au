@@ -1,0 +1,256 @@
+---
+title: "Resources - Do-It-Yourself Training"
+description: ""
+date: ""
+toc: true
+toc-depth: 8
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Do-It-Yourself Training**]{.large}
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Software Carpentry Lessons**
+
+**Website: [Software Carpentry Lessons](https://software-carpentry.org/lessons/)**
+
+#### Comprehensive lessons for beginners covering:  
+   - The Unix Shell  
+   - Version Control with Git  
+   - Programming with Python  
+   - Plotting and Programming with Python  
+   - Programming with R  
+   - R for Reproducible Scientific Analysis  
+
+#### Additional lessons for domain-specific analyses:  
+   - **Genomics:** [Genomics Lessons](https://datacarpentry.org/lessons/#genomics)  
+   - **Ecology:** [Ecology Lessons](https://datacarpentry.org/lessons/#ecology)  
+   - **Geospatial Analysis:** [Geospatial Lessons](https://datacarpentry.org/lessons/#geospatial)  
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Introduction to Bioinformatics Workbook**
+
+**Website: [Bioinformatics Workbook](https://bioinformaticsworkbook.org/about.html#gsc.tab=0)**
+
+Online workbook covering multiple topics related to bioinformatics. Includes videos, detailed explanations and worked examples with links to additional resources. Very extensive covering:  
+
+   - Command line basics and useful programs (includes Unix basic, introduction to HPC and Bioawk)
+   - Project Management (Introduction to Slack, GitHub and Markdown)
+   - Introduction to BLAST
+   - Experimental Design
+   - Data acquisition and wrangling (including file transfer, FASTA manipulation; Manipulating Excel data sheets and NCBI SRA)
+   - Bioinformatics Terminology (Includes section on file formats)
+   - RNA Sequencing (including section on DGE with DESeq2 and single cell analysis)
+   - Genome assembly and Annotation (multiple sections and tools)
+   - Comparative genomics
+   - Variant Discovery (including FreeBays and GATK Best Practices for DNA-seq)
+   - Metagenomics
+   - Genome Repeat Identification
+   - ATAC-Sequencing
+   - Data visualisation
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **QCIF Training – Statistical Comparisons Using R**
+
+**Website: [Statistical Comparisons Using R](https://qcif-training.github.io/StatisticalComparisonsUsingR/index.html)**
+
+Developed by QCIF and offered as training through CaRST. Prior knowledge of R required. Covers introduction to hypothesis testing; Correlation analysis; Statistical tests for both categorial and continuous variables; ANOVA. Course importantly reviews visualising data, how to choose the right statistical test, and how to interpret results.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Australian BioCommons Training Materials**
+
+**Website: [Australian BioCommons Webinars and Workshops](https://zenodo.org/communities/australianbiocommons-training/)**
+
+Lists all past Webinars and Workshops hosted by Australian BioCommons. Within are links to video recordings as well as some of the training materials.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Library Carpentry R Course**
+
+**Website: [Library Carpentry R Course](https://librarycarpentry.org/lc-r/)**
+
+Designed for beginners to learn R basics, including:  
+   - Data manipulation  
+   - Visualization  
+   - Statistical analysis  
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Bioinformatics Hub Resources**
+
+   - [Intro to Bash](https://uofabioinformaticshub.github.io/Intro-Bash/)  
+   - [Intro to NGS](https://uofabioinformaticshub.github.io/Intro-NGS/)  
+   - [Intro to R for Genomics](https://uofabioinformaticshub.github.io/Intro_R_FIB_2019/)  
+   - [Genomics Applications](https://uofabioinformaticshub.github.io/genomics_applications/)  
+   - [Transcriptomics Applications](https://uofabioinformaticshub.github.io/transcriptomics_applications/)  
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **RNA-Seq Analysis**
+
+   - **QC & Alignment:** [QC and Alignment Guide](https://dmgatti.github.io/rna-seq-lesson/03-qc-of-sequencing-results/index.html)  
+   - **Differential Gene Expression Analysis:** [DESeq2 Tutorial](https://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)  
+   - **Beginner Guide:** [Beginner’s Guide to DESeq2](https://bioc.ism.ac.jp/packages/2.14/bioc/vignettes/DESeq2/inst/doc/beginner.pdf)  
+   - **[Bulk RNA-seq Gene Expression Analysis](https://sagc-bioinformatics.github.io/Bulk_RNAseq/de.html)**
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Experimental Design Training**
+
+   - **Basic Experimental Design:** [Basic Design Guide](https://smcclatchy.github.io/exp-design/)  
+   - **Statistical Experimental Design:** [Statistical Design Guide](https://smcclatchy.github.io/statistical-experimental-design-old/)  
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Single-Cell RNA-Seq Training**
+
+   - **Introductory Course:** [Single-Cell RNA-Seq Course](https://dmgatti.github.io/SingleCellRNAseq/)  
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Spatial Transcriptomics**
+
+   - **Course by S.M. McClatchy:** [Spatial Transcriptomics Course](https://smcclatchy.github.io/spatial-transcriptomics/)  
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Statistical Inference for Biology**
+
+**Website: [Statistical Inference for Biology](https://carpentries-incubator.github.io/statistical-inference-for-biology/)**
+
+A Carpentries Incubator project covering statistical modeling for biological data analysis.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **QTL Mapping**
+
+   - **In Mice:** [QTL Mapping in Mice](https://smcclatchy.github.io/mapping/)  
+   - **In Humans:**  
+
+     - [PubMed Resource](https://pubmed.ncbi.nlm.nih.gov/21085122/)  
+     - [Nature Protocols Resource](https://www.nature.com/articles/nprot.2010.116)  
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Snakemake**
+
+**Website: [Snakemake Documentation](https://snakemake.readthedocs.io/en/stable/)**
+
+Learn to create reproducible workflows for bioinformatics pipelines.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Nextflow**
+
+**Website: [Nextflow Documentation](https://www.nextflow.io/)**
+
+Guide to implementing scalable, reproducible workflows in high-performance computing environments.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **WDL (Workflow Description Language)**
+
+**Website: [WDL Documentation](https://openwdl.org/)**  
+
+Learn to develop and execute scalable, reproducible pipelines using WDL. Features include:  
+
+   - Portable workflow specification language  
+   - Compatibility with Cromwell and miniWDL execution engines  
+   - Tutorials for building workflows in genomics and other domains. 
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Additional Workshops and Training**</span>
+
+   - [ABACBS 2017 Workshops](https://www.abacbs.org/conference2017/workshops)  
+   - [ABACBS 2018 Workshops](https://www.abacbs.org/conference2018/workshops)  
+   - [ABACBS 2019 Workshops](https://www.abacbs.org/conference2019/workshops0)  
+   - [ABACBS 2021 Workshops](https://www.abacbs.org/conference2021/workshops)  
+
+   - [Advanced R Documentation](http://adv-r.had.co.nz/)  
+   - [Bioinformatics Babraham Training](https://www.bioinformatics.babraham.ac.uk/training/) 
+
+<br>
+
+---

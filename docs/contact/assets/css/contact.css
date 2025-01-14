@@ -1,0 +1,124 @@
+/* Styling for vertical tabs and scrollable tables */
+.tab-container {
+    display: flex;
+    align-items: flex-start; /* Align tabs and content at the top */
+    overflow: hidden; /* Prevent horizontal scroll on the container */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Vertical tabs for larger screens */
+.nav-tabs {
+    display: flex;
+    flex-direction: column; /* Make the tabs vertical */
+    width: 150px; /* Fixed width for the tab list */
+    margin-right: 20px; /* Spacing between tabs and content */
+    border-right: 1px solid #ddd; /* Add a subtle border to separate tabs */
+    position: sticky; /* Ensure tabs remain fixed */
+    top: 0; /* Stick to the top */
+    flex-shrink: 0; /* Prevent shrinking of tabs */
+}
+
+.nav-tabs .nav-item .nav-link {
+    color: #E69F00; /* Tab text color */
+    padding: 8px 12px; /* Adjust padding for compact text */
+    border: 2px solid #E69F00; /* Rounded border with custom color */
+    border-radius: 10px; /* Add rounded edges */
+    text-align: left;
+    font-size: 13px; /* Smaller font size for the tab text */
+    background-color: white; /* Default background for inactive tabs */
+    margin-bottom: 5px; /* Space between tabs */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover and active states */
+}
+
+.nav-tabs .nav-item .nav-link:hover {
+    background-color: #f9f9f9; /* Subtle hover effect for inactive tabs */
+    border-color: #6495ED; /* Change border color on hover */
+    color: #6495ED; /* Tab text color on hover */
+}
+
+.nav-tabs .nav-item .nav-link.active {
+    background-color: tomato; /* Highlight active tab */
+    color: white; /* Text color for active tab */
+    border-color: #ff7043; /* Active tab border color */
+    border-radius: 15px; /* More rounded edges for the active tab */
+}
+
+/* Tab content area */
+.tab-content {
+    flex-grow: 1; /* Allow content to take up remaining space */
+    padding: 10px;
+    border: 1px solid #ddd; /* Add subtle border around tab content */
+    border-radius: 10px; /* Rounded edges for the tab content container */
+    width: calc(100% - 200px); /* Adjust content width to fit with tabs */
+    overflow: hidden; /* Prevent tab content from overflowing */
+}
+
+/* Scrollable tables */
+.scrollable-table {
+    max-height: 300px; /* Limit the vertical height of the table */
+    overflow-y: auto; /* Enable vertical scrolling for tables */
+    overflow-x: auto; /* Enable horizontal scrolling for tables */
+    border: 1px solid #ddd; /* Add a subtle border around the scrollable table */
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px; /* Slight rounding for the scrollable table */
+}
+
+.styled-table {
+    border-collapse: collapse;
+    width: 100%; /* Ensure table fits the container */
+    font-size: 13px;
+    table-layout: auto; /* Dynamic table column widths */
+}
+
+.styled-table th {
+    background-color: #95b540; /* Header background color */
+    color: white; /* Header text color */
+    text-align: left;
+    padding: 10px;
+    border-radius: 0; /* No rounding for table headers */
+    white-space: nowrap; /* Prevent text wrapping in header */
+}
+
+.styled-table td {
+    text-align: left;
+    padding: 10px;
+    vertical-align: top; /* Align multi-line text to the top */
+    white-space: nowrap; /* Prevent text wrapping in table cells */
+}
+
+/* Responsive behavior for mobile devices */
+@media screen and (max-width: 768px) {
+    .tab-container {
+        flex-direction: column; /* Stack tabs and content vertically */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+
+    .nav-tabs {
+        flex-direction: row; /* Change tabs to horizontal for smaller screens */
+        width: 100%; /* Tabs take full width */
+        margin-right: 0; /* Remove margin between tabs and content */
+        border-right: none; /* Remove the right border for mobile */
+        overflow-x: auto; /* Allow horizontal scrolling for tabs */
+    }
+
+    .nav-tabs .nav-item .nav-link {
+        text-align: center; /* Center-align text in horizontal tabs */
+        flex-grow: 1; /* Tabs evenly distribute across the row */
+        margin-right: 5px; /* Add spacing between horizontal tabs */
+        font-size: 12px; /* Slightly smaller text for horizontal tabs */
+        white-space: nowrap; /* Prevent text wrapping in tabs */
+    }
+
+    .tab-content {
+        width: 100%; /* Content takes full width */
+    }
+
+    .scrollable-table {
+        max-height: none; /* Remove height limit for mobile */
+    }
+
+    .styled-table td, .styled-table th {
+        white-space: nowrap; /* Allow text wrapping for smaller screens */
+    }
+}

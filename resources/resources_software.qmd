@@ -1,0 +1,200 @@
+---
+title: "Resources - Software"
+description: ""
+date: ""
+toc: true
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+    embed-resources: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> **Software & Tools**
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**General Bioinformatics Tools**
+
+   - [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi)  
+  **Description**: Tool for sequence alignment and searching databases for sequence similarities.
+
+   - [Bioawk](https://github.com/lh3/bioawk)  
+  **Description**: An extended version of the Unix `awk` command, tailored for processing biological data.
+
+   - [GATK (Genome Analysis Toolkit)](https://gatk.broadinstitute.org/)  
+  **Description**: A suite of tools for variant discovery and genotyping in high-throughput sequencing data.
+
+   - [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
+  **Description**: A quality control tool for high-throughput sequence data.
+
+   - [HISAT2](https://daehwankimlab.github.io/hisat2/)  
+  **Description**: A fast and sensitive alignment tool for mapping RNA-seq reads.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Workflow Management Systems**
+
+   - [Snakemake](https://snakemake.readthedocs.io/en/stable/)  
+  **Description**: A Python-based workflow management tool for reproducible and scalable data analysis.
+
+   - [Nextflow](https://www.nextflow.io/)  
+  **Description**: A workflow framework enabling scalable and reproducible workflows.
+
+   - [Cromwell](https://cromwell.readthedocs.io/en/stable/)  
+  **Description**: A workflow management system designed for portability and scalability.
+
+   - [WDL (Workflow Description Language)](https://openwdl.org/)  
+  **Description**: A portable specification language for defining bioinformatics workflows.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**RNA-Seq Analysis Tools**
+
+   - [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)  
+  **Description**: R package for differential gene expression analysis.
+
+   - [EdgeR](https://bioconductor.org/packages/release/bioc/html/edgeR.html)  
+  **Description**: R package for differential expression analysis of RNA-seq data.
+
+   - [STAR](https://github.com/alexdobin/STAR)  
+  **Description**: An RNA-seq aligner optimized for ultrafast alignment.
+
+   - [Salmon](https://salmon.readthedocs.io/en/latest/)  
+  **Description**: A lightweight tool for transcript quantification from RNA-seq data.
+  
+   - [RNA-seq Analysis with Limma, Glimma, and edgeR](https://bioconductor.org/packages/release/workflows/vignettes/RNAseq123/inst/doc/limmaWorkflow.html)  
+  **Description**: A step-by-step guide for performing RNA-seq differential gene expression analysis using edgeR, Limma, and Glimma in R.
+
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Data Visualization Resources**
+
+   - [From Data to Vis](https://www.data-to-viz.com/)  
+  **Description**: Provides detailed guidance on selecting and creating graphs for various types of data. Includes examples and links for implementation in R, Python, D3.js, and React.
+
+   - [Cheat Sheets for R](https://posit.co/resources/cheatsheets/)  
+  **Description**: A collection of cheat sheets covering RStudio, ggplot2, dplyr, tidyr, and more, for quick reference and learning.
+
+   - [The R Graph Gallery](https://r-graph-gallery.com/)  
+  **Description**: A curated collection of graph examples created using R, along with code snippets and customization tips.
+
+   - [Awesome ggplot2](https://github.com/erikgahner/awesome-ggplot2)  
+  **Description**: A GitHub repository with links to packages, books, tutorials, and resources for data visualization using ggplot2.
+
+   - [Top R Colour Palettes](https://www.datanovia.com/en/blog/top-r-color-palettes-to-know-for-great-data-visualization/)  
+  **Description**: Examples of color palettes for data visualization in R, including RColorBrewer, viridis, and ggplot2 palettes.
+
+   - [IGV (Integrative Genomics Viewer)](https://software.broadinstitute.org/software/igv/)  
+  **Description**: A tool for visualizing large-scale genomic datasets.
+
+   - [RStudio](https://posit.co/)  
+  **Description**: An integrated development environment (IDE) for R programming.
+
+   - [Tableau Public](https://public.tableau.com/)  
+  **Description**: A data visualization platform for creating interactive dashboards.
+
+   - [Plotly](https://plotly.com/)  
+  **Description**: A graphing library for Python and R, enabling interactive visualizations.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Metagenomics Tools**
+
+   - [QIIME2](https://qiime2.org/)  
+  **Description**: A platform for analyzing and visualizing microbiome data.
+
+   - [Kraken2](https://ccb.jhu.edu/software/kraken2/)  
+  **Description**: A taxonomic sequence classification system.
+
+   - [MetaPhlAn](https://huttenhower.sph.harvard.edu/metaphlan)  
+  **Description**: A tool for profiling the composition of microbial communities.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Variant Calling Tools & Genomic Analysis**
+
+   - [PLINK](https://zzz.bwh.harvard.edu/plink/)  
+  **Description**: A toolset for genome-wide association studies and population genetics.
+
+   - [FreeBayes](https://github.com/freebayes/freebayes)  
+  **Description**: A haplotype-based variant detector.
+
+   - [bcftools](http://www.htslib.org/)  
+  **Description**: Command-line tools for variant calling and manipulating VCF files.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Structural Variant Analysis**
+
+   - [LUMPY](https://github.com/arq5x/lumpy-sv)  
+  **Description**: A structural variant detection tool.
+
+   - [Manta](https://github.com/Illumina/manta)  
+  **Description**: A tool for calling structural variants and indels.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold">**Additional Useful Tools**
+
+   - [Docker](https://www.docker.com/)  
+  **Description**: A platform for creating and running containers for reproducible workflows.
+
+   - [Singularity](https://sylabs.io/)  
+  **Description**: A container system optimized for HPC environments.
+
+   - [Cytoscape](https://cytoscape.org/)  
+  **Description**: A tool for visualization and analysis of networks.
+
+   - [Galaxy](https://usegalaxy.org/)  
+  **Description**: An open-source platform for reproducible bioinformatics research.
+
+   - [UCSC Genome Browser](https://genome.ucsc.edu/)  
+  **Description**: An interactive tool for exploring genome annotations.
+  
+<br>
+
+---

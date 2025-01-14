@@ -1,0 +1,113 @@
+---
+title: "Events"
+description: ""
+date: ""
+toc: true
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Events**]{.large}
+
+<br>
+
+### <span style="color: #2a71d0; font-weight: bold"> **Calendar**
+
+<br>
+
+```{r, include=FALSE}
+library(shiny)
+library(toastui)
+library(bslib)
+library(shiny)
+library(shinyBS)
+library(shinythemes)
+library(shinydashboard)
+library(shinyjs)
+```
+
+```{r, include=FALSE}
+mycaldata=read.csv("assets/data/calender_bioEvents.csv", stringsAsFactors = F, fill=T, header=T)
+#EVENT TITLE
+mycaldata$title= ifelse(mycaldata$url != "", paste0("<a href='", mycaldata$url),mycaldata$url)
+mycaldata$title= ifelse(mycaldata$url != "", paste0(mycaldata$title,"'>", mycaldata$course, "</a>"),mycaldata$url)
+mycaldata$title= ifelse(mycaldata$url == "", mycaldata$course,mycaldata$title)
+#EVENT BODY
+mycaldata$Cost = paste0("Cost: ", mycaldata$Cost)
+mycaldata$body = ifelse(mycaldata$registerlink != "", paste0("<a href='", mycaldata$registerlink),mycaldata$registerlink)
+mycaldata$body= ifelse(mycaldata$registerlink != "", paste0(mycaldata$body,"'>", mycaldata$bodyText, "</a>"),mycaldata$registerlink)
+mycaldata$body= paste0(mycaldata$body," ", mycaldata$Cost, " : ", mycaldata$Amount..if.not.free.)
+mycaldata$body= gsub(" : +$","", mycaldata$body)
+#EVENT TIME - All Day
+mycaldata$start= ifelse(mycaldata$category=="allday",mycaldata$startDate,mycaldata$start)
+mycaldata$end= ifelse(mycaldata$category=="allday", mycaldata$endDate,mycaldata$end)
+#EVENT TIME - Time
+mycaldata$start= ifelse(mycaldata$category=="time",paste0(mycaldata$startDate," ",mycaldata$startTime,":00"),mycaldata$start)
+mycaldata$end= ifelse(mycaldata$category=="time", paste0(mycaldata$startDate," ",mycaldata$endTime,":00"),mycaldata$end)
+#EVENT TIME - Time Series
+#recurrenceRule=ifelse(mycaldata$startDate!=mycaldata$endDate, paste0(mycaldata$startDate," ",mycaldata$endTime),"")
+#mycaldata = mycaldata[c("calendarId","title","body","recurrenceRule","start","end","category","location","backgroundColor","color","borderColor")]
+#mycaldata_final = mycaldata[(mycaldata$locationType %in% input$locationType) & (mycaldata$attendanceType %in% input$attendanceType) & (mycaldata$eventType %in% input$eventType),] 
+mycaldata_final = mycaldata[c("calendarId","title","body","recurrenceRule","start","end","category","location","backgroundColor","color","borderColor")]
+#toastui::calendar(mycaldata_final, navigation = TRUE, view="month",isReadOnly=TRUE,useDetailPopup = TRUE)
+#calendar(mycaldata_final, navigation = TRUE, view="month",isReadOnly=TRUE,useDetailPopup = TRUE) 
+
+```
+
+```{r, echo=FALSE}
+toastui::calendar(mycaldata_final, navigation = TRUE, view="month",isReadOnly=TRUE, useDetailPopup = TRUE,height = "1000")
+```
+
+::: small
+Updated: {{< meta current_date >}} at {{< meta current_time >}} .
+:::
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #2a71d0; font-weight: bold"> **Useful Links**
+
+<br>
+
+Below are links to other sites that includes more information about workshops, social and community events:
+
+- [SAHMRI/SAGC](https://sahmri.org.au/)
+- [ABACBS](https://www.abacbs.org/)
+- [COMBINE](https://www.combine.org.au/)
+- [University of Adelaide](https://www.adelaide.edu.au/)
+- [Intersect](https://intersect.org.au/)
+- [Galaxy](https://training.galaxyproject.org)
+- Slack:
+  * [COMBINE](https://combine-au.slack.com/)
+  * [Bionformatics Hub/UofA](https://bioinformatics-hub.slack.com/)
+
+For comprehensive resources, including online training, workshops, and recommended books, visit our [Resources](../resources/resources.html) page.
+
+<br>
+
+---
+
+<br>
+
+Can’t find your event on the calendar? Just [reach out](mailto:resources@doppeldata.au), and we’ll make sure to include all the details!
+
+This document is updated regularly to include current social events, workshops & seminars.

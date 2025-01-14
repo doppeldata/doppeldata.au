@@ -1,0 +1,59 @@
+---
+title: "About Us"
+description: ""
+date: ""
+toc: true
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**About Us**]{.large}
+
+<br>
+
+We are a collective of passionate scientists, researchers, and innovators dedicated to fostering [**computational biology**]{.ul}, whether it be <span style="color: #2a71d0; font-weight: bold">statistical genomics</span>, <span style="color: #2a71d0; font-weight: bold">data science</span>, <span style="color: #2a71d0; font-weight: bold">genetic epidemiology</span>, <span style="color: #2a71d0; font-weight: bold">systems biology</span>, or <span style="color: #2a71d0; font-weight: bold">bioinformatics</span>, as a driving force for innovation and discovery. Our mission is to empower South Australia’s scientific community and beyond by bridging the gaps in training, expertise, and resources essential for modern, data-driven research.
+
+<span style="color: #2a71d0; font-weight: bold">Computational biology</span> — a dynamic field at the crossroads of biology, statistics, and computational science—has become vital in addressing challenges across healthcare, agriculture, and environmental science. We envision a future where bioinformatics is not an afterthought but a cornerstone of impactful research and innovation.
+
+Our work is driven by a commitment to empowering researchers and advancing computational biology through targeted initiatives:  
+
+-   <span style="color: #d98800; font-weight: bold"> [**Consulting and Support**]{.ul}: </span> We provide expert consulting services and on-demand support to researchers and industry professionals, offering guidance in data analysis, integration, and interpretation to optimise outcomes.
+-   <span style="color: #d98800; font-weight: bold"> [**Empowering Learning**]{.ul}:</span> We develop tailored programs to equip researchers with practical, scalable skills in statistical genomics/data science/genetic epidemiology/bioinformatics, enabling them to analyse and decode complex genetic, transcriptomic, proteomic, microbial, epigenetic, and multi-omics data.  
+-   <span style="color: #d98800; font-weight: bold"> [**Fostering Leadership**]{.ul}:</span> We cultivate a forward-thinking community by integrating computational, biological, and data science expertise, providing solutions accessible to both scientists and engineers.  
+-   <span style="color: #d98800; font-weight: bold"> [**Applying Expertise**]{.ul}:</span> We leverage computational biology across diverse fields like forensics, environmental science, and agricultural research, offering tailored solutions to address unique challenges and drive innovation.  
+-   <span style="color: #d98800; font-weight: bold"> [**Building Resources**]{.ul}:</span> We create accessible hubs and cutting-edge tools to support collaboration and streamline data processing through intuitive workflow pipeline development that automates and simplifies analysis. 
+
+Through these efforts, we aim to build a vibrant, interdisciplinary computational biology ecosystem that transforms data into actionable insights and supports groundbreaking research across academia and industry.
+
+At the heart of our approach are our values: curiosity, inclusivity, and innovation. We believe in the power of shared knowledge and collaboration to unlock breakthroughs that advance science and benefit society.
+
+Together, we are shaping a future where computational biology transforms the way we understand and solve complex challenges. Join us in building a dynamic, collaborative ecosystem ready to meet the demands of an evolving scientific landscape.
+
+<br>
+
+---
+
+<br>
+
+### [**Contact Us**](../contact/contact.html)
+
+<br>
+
+Let Doppeldata help you transform your research into meaningful solutions.  
+- **Email**: [info@doppeldata.au](mailto:info@doppeldata.au)  

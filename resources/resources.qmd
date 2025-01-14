@@ -1,0 +1,110 @@
+---
+title: "Resources"
+description: ""
+date: ""
+toc: true
+number-sections: false
+format:
+  html:
+    page-layout: full
+    other-links:
+      - text: SAHMRI
+        href: https://sahmri.org.au/
+      - text: ABACBS
+        href: https://www.abacbs.org/
+      - text: University of Adelaide
+        href: https://www.adelaide.edu.au/
+      - text: Intersect
+        href: https://intersect.org.au/
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Resources**]{.large}
+
+<br>
+
+<style>
+/* Card container styling */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Individual card styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #E69F00;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #2a71d0;
+}
+
+.card p {
+  margin: 5px 0;
+}
+</style>
+
+::::::::::: card-container
+::: card
+<h3>[**Grants**](resources_grants.html)</h3>
+:::
+
+::: card
+<h3>[**Books**](resources_books.html)</h3>
+:::
+
+::: card
+<h3>[**Github Repos**](resources_github.html)</h3>
+:::
+
+::: card
+<h3>[**Databases & Data**](resources_databases.html)</h3>
+:::
+
+::: card
+<h3>[**Software**](resources_software.html)</h3>
+:::
+
+::: card
+<h3>[**Cheatsheets**](resources_cheatsheets.html)</h3>
+:::
+
+::: card
+<h3>[**Do-It-Yourself Training**](resources_doityourself.html)</h3>
+:::
+
+::: card
+<h3>[**Local Computational Biologists**](../contact/contact.html#adelaide-computational-biology-community.html)</h3>
+:::
+:::::::::::
+
+<br>
+
+If you know of a website that has been a valuable resource for you and your team and would like to share it, [we would love to include it](mailto:resources@doppeldata.au).

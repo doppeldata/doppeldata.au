@@ -1,0 +1,219 @@
+---
+title: "Resources - Databases"
+description: ""
+date: ""
+toc: true
+number-sections: false
+format:
+  html:
+    page-layout: full
+    code-fold: true
+---
+
+<style>
+  /* Force hiding of the title */
+  .pagelayout-title,
+  .pagelayout-title h1,
+  h1.pagetitle, /* Specific targeting for standalone titles */
+  h1 {
+    display: none !important;
+    visibility: hidden !important;
+    color: transparent !important;
+  }
+</style>
+
+
+## <span style="color: #cc0000; font-weight: bold"> [**Databases & Data**]{.large}
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Genomics and Sequence Databases**
+
+   - **[GenBank](https://www.ncbi.nlm.nih.gov/genbank/)**  
+  Repository for nucleotide sequences and their protein translations. Includes annotations and metadata.
+
+   - **[Ensembl Genome Browser](https://ensembl.org/)**  
+  Genome-scale data for vertebrates, plants, and more. Includes annotations, comparative genomics, and regulatory data.
+
+   - **[UCSC Genome Browser](https://genome.ucsc.edu/)**  
+  Interactive platform for viewing genome assemblies with data on genes, sequences, regulatory elements, and conservation.
+
+   - **[RefSeq](https://www.ncbi.nlm.nih.gov/refseq/)**  
+  Curated collection of DNA, RNA, and protein sequences. Provides reference standards for genome annotation.
+
+   - **[DDBJ (DNA Data Bank of Japan)](https://www.ddbj.nig.ac.jp/index-e.html)**  
+  Partner to GenBank and EMBL-EBI, sharing nucleotide sequence data globally.
+  
+   - **[GATK Resource Bundle](https://gatk.broadinstitute.org/hc/en-us/articles/360035890811)**  
+  A comprehensive set of reference files, including:  
+     - Human reference genomes (e.g., `GRCh38`, `hg19`)  
+     - Variant calling reference files like known SNPs (`dbSNP`) and indels (`Mills_and_1000G`).  
+     - Precomputed files for Base Quality Score Recalibration (BQSR) and Variant Quality Score Recalibration (VQSR).
+
+   - **[dbSNP](https://www.ncbi.nlm.nih.gov/snp/)**  
+  SNP reference files for population genetics and variant calling.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Protein and Structural Databases**
+
+   - **[UniProt](https://www.uniprot.org/)**  
+  Comprehensive resource for protein sequence and functional information.
+
+   - **[Protein Data Bank (PDB)](https://www.rcsb.org/)**  
+  Repository of 3D structural data of proteins, nucleic acids, and complexes.
+
+   - **[InterPro](https://www.ebi.ac.uk/interpro/)**  
+  Functional analysis of proteins by classifying sequences into families.
+
+   - **[Pfam](https://pfam.xfam.org/)**  
+  Database of protein families and associated annotations.
+
+   - **[STRING](https://string-db.org/)**  
+  Database for protein-protein interaction networks.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Functional and Pathway Databases**
+
+   - **[KEGG (Kyoto Encyclopedia of Genes and Genomes)](https://www.genome.jp/kegg/)**  
+  Collection of manually curated pathway maps and functional annotations.
+
+   - **[Reactome](https://reactome.org/)**  
+  Curated pathways of biological processes.
+
+   - **[BioCyc](https://biocyc.org/)**  
+  Database of metabolic pathways and genome annotations.
+
+   - **[WikiPathways](https://www.wikipathways.org/)**  
+  Open-access platform for biological pathway knowledge.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Oncology and Cancer Genomics Databases**
+
+   - **[COSMIC (Catalogue of Somatic Mutations in Cancer)](https://cancer.sanger.ac.uk/cosmic)**  
+  Comprehensive database of somatic mutations in human cancers. Includes data on mutations, gene fusions, copy-number changes, and clinical correlations.
+
+   - **[GDC (Genomic Data Commons)](https://gdc.cancer.gov/)**  
+  Repository for cancer genomic and clinical data.
+
+   - **[ICGC (International Cancer Genome Consortium)](https://dcc.icgc.org/)**  
+  Platform providing genomic and clinical data from cancer research studies.
+
+   - **[TCGA (The Cancer Genome Atlas)](https://www.cancer.gov/tcga)**  
+  A dataset for cancer genomics and phenotypes.
+
+<br>
+
+---
+
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Microbial and Metagenomics Databases**
+
+   - **[MG-RAST](https://www.mg-rast.org/)**  
+  Platform for analysis of metagenomic data.
+
+   - **[Greengenes](https://greengenes.secondgenome.com/)**  
+  16S rRNA gene database for microbial taxonomy and phylogeny.
+
+   - **[SILVA](https://www.arb-silva.de/)**  
+  Comprehensive database for ribosomal RNA sequences.
+
+   - **[IMG/M](https://img.jgi.doe.gov/)**  
+  Integrated Microbial Genomes and Microbiomes platform.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Epigenomics and Regulatory Databases**
+
+   - **[ENCODE](https://www.encodeproject.org/)**  
+  Resource of functional genomics data for gene regulation.
+
+   - **[Roadmap Epigenomics](http://www.roadmapepigenomics.org/)**  
+  Epigenetic data for diverse cell types and tissues.
+
+   - **[JASPAR](https://jaspar.genereg.net/)**  
+  Open-access database of transcription factor binding profiles.
+
+   - **[GTRD (Gene Transcription Regulation Database)](http://gtrd.biouml.org/)**  
+  Transcription factor binding sites and gene regulation data.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Metagenomics Tools**
+
+   - **[QIIME2](https://qiime2.org/)**  
+  Platform for analyzing and visualizing microbiome data.
+
+   - **[Kraken2](https://ccb.jhu.edu/software/kraken2/)**  
+  A taxonomic sequence classification system.
+
+   - **[MetaPhlAn](https://huttenhower.sph.harvard.edu/metaphlan)**  
+  A tool for profiling the composition of microbial communities.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Variation and Population Genetics Databases**
+
+   - **[1000 Genomes Project](https://www.internationalgenome.org/)**  
+  Catalog of human genetic variation.
+
+   - **[gnomAD](https://gnomad.broadinstitute.org/)**  
+  Aggregated human genome and exome data.
+
+   - **[HapMap](https://www.genome.gov/10001688/international-hapmap-project)**  
+  Resource for human haplotypes and SNP frequencies.
+
+   - **[ExAC](https://exac.broadinstitute.org/)**  
+  Database of exome sequencing data from diverse populations.
+
+<br>
+
+---
+
+<br>
+
+### <span style="color: #95b540; font-weight: bold"> **Miscellaneous Resources**
+
+   - **[Gene Ontology (GO)](http://geneontology.org/)**  
+  Resource for functional annotation of genes.
+
+   - **[ArrayExpress](https://www.ebi.ac.uk/arrayexpress/)**  
+  Archive for functional genomics data.
+
+   - **[BioSamples](https://www.ebi.ac.uk/biosamples/)**  
+  Metadata repository for biological samples.
+
+   - **[Human Protein Atlas](https://www.proteinatlas.org/)**  
+  Comprehensive data on protein expression in human tissues and organs.
+  
+<br>
+
+---

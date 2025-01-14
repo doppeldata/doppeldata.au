@@ -1,0 +1,222 @@
+---
+pagetitle: "Doppeldata"
+subtitle: ""
+toc: false
+date: ""
+sidebar: false
+format:
+  html:
+    css: "assets/css/home.css"
+    number-sections: false
+    title-block-banner: false
+    page-layout: full
+    anchor-sections: false
+execute:
+  freeze: false
+---
+
+::: {.home-container}
+::: {.home-grid-parent}
+::: {.home-grid-child-left}
+
+## <span style="color: #cc0000; font-weight: bold"> [**Welcome!**]{.large}
+
+**Based in South Australia, **[**Doppeldata**](about/about.html) **provides support to researchers, students, and professionals in bioinformatics, genomics, and computational biology through tailored tools, workshops, and resources.** 
+
+**We offer direct assistance and help build connections within Adelaide’s bioinformatics community to drive collaboration and innovation, including:**
+
+- [**Personalised Consultations**](services/services.html): **Get expert advice on project planning, study design, troubleshooting, or data analysis across bioinformatics and computational biology.**
+- **A** [**Resources Hub**](resources/resources.html): **Explore guides, workshops, and tools to enhance your skills in statistical genomics, computational modeling, and data visualisation.**
+- **Local** [**Community Events**](events/events.html): **Community events and meetups customed to Adelaide’s scientific and academic community.**
+
+---
+
+**Have questions or want to connect? Visit our ** [**Contacts**](contact/contact.html) **page.**
+
+**Curious about who we are? Check out our** [**About**](about/about.html) **page.**
+
+---
+
+<span style="color: #007f00; font-weight: bold;"> **We’re not just a consultancy business — we’re your neighbours, your collaborators, and your biggest cheerleaders. South Australia’s research and tech community is thriving, and we’re proud to be part of it. Let’s grow together!**
+
+---
+
+<span style="color: #b28023; font-weight: bold; font-size: 15px; "> Proudly supporting Adelaide’s research community.
+
+---
+::: small
+Updated: {{< meta current_date >}}  at {{< meta current_time >}} .
+:::
+
+:::
+:::{.home-grid-child-right}
+
+
+```{=html}
+<div class="code-strip-container">
+  <div class="flying-code-container" id="codeStrip"></div>
+</div>
+```
+
+<style>
+  /* Black strip for the code */
+  .code-strip-container {
+    position: absolute;
+    top: 0;
+    left: 52%; /* 3/4 of the way from the left */
+    width: 375px; /* Black strip width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    background-color: black;
+    z-index: 1;
+  }
+
+  /* Flying code container with 3D perspective */
+  .flying-code-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Allow interaction with underlying content */
+    perspective: 1200px; /* Add 3D perspective */
+  }
+
+  /* Individual flying code lines */
+  .code-snippet {
+    position: absolute;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    animation: fly-outward 6s ease-out forwards;
+    opacity: 1;
+    transform-origin: center center; /* Origin for scaling */
+  }
+
+  /* Colors for different types of code */
+  .code-snippet.r {
+    color: #6495ED; /* Blue for R */
+  }
+
+  .code-snippet.python {
+    color: #95b540; /* Green for Python */
+  }
+
+  .code-snippet.shell {
+    color: tomato; /* Red for Shell */
+  }
+
+  .code-snippet.sql {
+    color: #E69F00; /* Orange for SQL */
+  }
+
+  /* Animation for flying outward with 3D perspective */
+  @keyframes fly-outward {
+    0% {
+      transform: translate3d(0, 0, -800px) scale(0.2); /* Start small and far */
+      opacity: 1;
+    }
+    50% {
+      opacity: 1; /* Fully visible in the middle */
+    }
+    100% {
+      transform: translate3d(var(--end-x), var(--end-y), 0) scale(1.5); /* Fly outward */
+      opacity: 0; /* Fade out at the edges */
+    }
+  }
+</style>
+
+<script>
+  const codeStrip = document.getElementById('codeStrip');
+  const codeSamples = [
+    // R code examples (100 examples)
+    { type: "r", code: "library(ggplot2)" },
+    { type: "r", code: "data <- read.csv('data.csv')" },
+    { type: "r", code: "summary(data)" },
+    { type: "r", code: "install.packages('dplyr')" },
+    { type: "r", code: "data <- data.frame(x=1:10, y=rnorm(10))" },
+    { type: "r", code: "plot(data$x, data$y)" },
+    { type: "r", code: "mean(data$y)" },
+    { type: "r", code: "data <- filter(data, x > 5)" },
+    { type: "r", code: "hist(data$y)" },
+    { type: "r", code: "write.csv(data, 'output.csv')" },
+
+    // Python code examples (100 examples)
+    { type: "python", code: "import pandas as pd" },
+    { type: "python", code: "df = pd.read_csv('data.csv')" },
+    { type: "python", code: "import matplotlib.pyplot as plt" },
+    { type: "python", code: "plt.scatter(x, y)" },
+    { type: "python", code: "df['new_col'] = df['col1'] * 2" },
+    { type: "python", code: "import numpy as np" },
+    { type: "python", code: "arr = np.array([1, 2, 3])" },
+    { type: "python", code: "from sklearn.linear_model import LinearRegression" },
+    { type: "python", code: "model = LinearRegression().fit(X, y)" },
+    { type: "python", code: "plt.plot(x, y)" },
+
+    // Shell commands (100 examples)
+    { type: "shell", code: "fastqc sample.fastq" },
+    { type: "shell", code: "bowtie2 -x genome -U reads.fastq -S output.sam" },
+    { type: "shell", code: "samtools view -bS output.sam > output.bam" },
+    { type: "shell", code: "samtools sort output.bam -o sorted.bam" },
+    { type: "shell", code: "bcftools call -mv -Oz -o variants.vcf.gz" },
+    { type: "shell", code: "gzip -d file.gz" },
+    { type: "shell", code: "tar -xvf archive.tar" },
+    { type: "shell", code: "ls -lah" },
+    { type: "shell", code: "cp file1.txt file2.txt" },
+    { type: "shell", code: "grep 'pattern' file.txt" },
+
+    // SQL code examples (100 examples)
+    { type: "sql", code: "SELECT * FROM genes WHERE expression > 10;" },
+    { type: "sql", code: "CREATE TABLE variants (id INT, variant TEXT);" },
+    { type: "sql", code: "INSERT INTO variants VALUES (1, 'rs123');" },
+    { type: "sql", code: "UPDATE samples SET quality=99 WHERE id=5;" },
+    { type: "sql", code: "DELETE FROM genes WHERE expression < 5;" },
+    { type: "sql", code: "SELECT COUNT(*) FROM samples;" },
+    { type: "sql", code: "ALTER TABLE genes ADD COLUMN function TEXT;" },
+    { type: "sql", code: "DROP TABLE old_table;" },
+    { type: "sql", code: "CREATE INDEX idx_gene_expression ON genes(expression);" },
+    { type: "sql", code: "SELECT DISTINCT variant FROM variants;" },
+  ];
+
+  function createCodeSnippet() {
+    const randomCode = codeSamples[Math.floor(Math.random() * codeSamples.length)];
+    const snippet = document.createElement('div');
+    snippet.classList.add('code-snippet', randomCode.type);
+    snippet.textContent = randomCode.code;
+
+    // Center of the black strip
+    const stripX = window.innerWidth * 0.625; // Center of black strip
+    const stripY = window.innerHeight / 2; // Center of viewport vertically
+
+    // Randomize outward direction
+    const angle = Math.random() * 2 * Math.PI; // Random angle in radians
+    const distance = Math.random() * Math.max(window.innerWidth, window.innerHeight); // Random distance
+    const endX = Math.cos(angle) * distance;
+    const endY = Math.sin(angle) * distance;
+
+    // Set initial position and animation properties
+    snippet.style.left = `${stripX}px`;
+    snippet.style.top = `${stripY}px`;
+    snippet.style.setProperty('--end-x', `${endX}px`);
+    snippet.style.setProperty('--end-y', `${endY}px`);
+    snippet.style.animationDuration = `${Math.random() * 15 + 17}s`; // Random duration between 4-6 seconds
+
+    codeStrip.appendChild(snippet);
+
+    // Remove snippet after animation ends
+    setTimeout(() => {
+      snippet.remove();
+    }, 24000); // Match animation duration
+  }
+
+  // Continuously generate code snippets
+  setInterval(createCodeSnippet, 200); // Generate a new snippet every 300ms
+</script>
+
+
+
+
+:::
+:::
+:::
