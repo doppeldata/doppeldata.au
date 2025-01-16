@@ -21,13 +21,11 @@ execute:
 
 ## <span style="color: #cc0000; font-weight: bold"> [**Welcome!**]{.large}
 
-**Based in South Australia, **[**Doppeldata**](about/about.html) **provides support to researchers, students, and professionals in bioinformatics, genomics, and computational biology through tailored tools, workshops, and resources.** 
+**Based in South Australia, **[**Doppeldata**](about/about.html) **provides support to researchers, students, and professionals in bioinformatics, genomics, and computational biology through tailored tools, workshops, and resources. We offer:** 
 
-**We offer direct assistance and help build connections within Adelaide’s bioinformatics community to drive collaboration and innovation, including:**
-
-- [**Personalised Consultations**](services/services.html): **Get expert advice on project planning, study design, troubleshooting, or data analysis across bioinformatics and computational biology.**
-- **A** [**Resources Hub**](resources/resources.html): **Explore guides, workshops, and tools to enhance your skills in statistical genomics, computational modeling, and data visualisation.**
-- **Local** [**Community Events**](events/events.html): **Community events and meetups customed to Adelaide’s scientific and academic community.**
+- [**Personalised Consultations**](services/services.html): **Get expert advice on project planning, study design, troubleshooting, or data analysis.**
+- **A** [**Resources Hub**](resources/resources.html): **Explore guides, workshops, and tools to enhance your skills.**
+- **Local** [**Community Events**](events/events.html): **Join Adelaide’s scientific community with local workshops, meetups, and events.**
 
 ---
 
@@ -37,7 +35,7 @@ execute:
 
 ---
 
-<span style="color: #007f00; font-weight: bold;"> **We’re not just a consultancy business — we’re your neighbours, your collaborators, and your biggest cheerleaders. South Australia’s research and tech community is thriving, and we’re proud to be part of it. Let’s grow together!**
+<span style="color: #007f00; font-weight: bold; font-size: 16px; "> **We’re not just a consultancy business — we’re your neighbours, your collaborators, and your biggest cheerleaders. South Australia’s research and tech community is thriving, and we’re proud to be part of it. Let’s grow together!**
 
 ---
 

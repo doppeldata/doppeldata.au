@@ -81,10 +81,6 @@ format:
 :::
 
 ::: card
-<h3>[**Github Repos**](resources_github.html)</h3>
-:::
-
-::: card
 <h3>[**Databases & Data**](resources_databases.html)</h3>
 :::
 

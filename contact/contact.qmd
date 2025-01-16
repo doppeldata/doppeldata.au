@@ -50,17 +50,17 @@ Alternatively, explore the contact details of [Bioinformaticians/Statistical Gen
   
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name" 
-         style="width: 100%; border: 2px solid green; padding: 8px;" 
+         style="width: 100%; border: 2px solid #95b540; padding: 8px;" 
          required><br><br>
 
   <label for="email">Email:</label><br>
   <input type="email" id="email" name="email" 
-         style="width: 100%; border: 2px solid green; padding: 8px;" 
+         style="width: 100%; border: 2px solid #95b540; padding: 8px;" 
          required><br><br>
 
   <label for="subject">Subject:</label><br>
   <select id="subject" name="subject" 
-          style="width: 100%; border: 2px solid green; padding: 8px;">
+          style="width: 100%; border: 2px solid #95b540; padding: 8px;">
     <option value="" disabled selected>Select a subject</option>
     <option value="Services, Costs &/or Quote">Services, Costs &/or Quote</option>
     <option value="Careers/Employment Opportunities">Careers/Employment Opportunities</option>
@@ -71,7 +71,7 @@ Alternatively, explore the contact details of [Bioinformaticians/Statistical Gen
 
   <label for="message">Message:</label><br>
   <textarea id="message" name="message" rows="5" 
-            style="width: 100%; border: 2px solid green; padding: 8px;" 
+            style="width: 100%; border: 2px solid #95b540; padding: 8px;" 
             required></textarea>
 
   <input type="submit" value="Submit" 
@@ -88,89 +88,155 @@ If you would like to add your contact details, please [reach out](mailto:communi
 
 <br>
 
-```{python, include=FALSE}
-import pandas as pd
-from IPython.display import display, HTML
+```{r, include=TRUE}
+library(tidyverse)
+library(readxl)
+library(reactable)
+library(glue)
+library(htmltools)
 
-# Define the path to your local Excel file
-EXCEL_FILE = "assets/data/Adelaide bioinformaticians.xlsx"  # Replace with the actual path to your Excel file
+df <- here::here(
+  "contact", "assets", "data", "Adelaide bioinformaticians.xlsx"
+) %>% 
+  read_excel()
 
-# Load data from the Excel file
-people_df = pd.read_excel(EXCEL_FILE, sheet_name="People").fillna("")
-institutions_df = pd.read_excel(EXCEL_FILE, sheet_name="Institutions", index_col="Code")
-
-# Map institution URLs
-institution_urls = dict(institutions_df[["Institute", "url"]].values)
-
-# Replace institution codes with full names
-institution_codes = dict(institutions_df["Institute"])
-people_df["Institute"].replace(institution_codes, inplace=True)
-
-# Relabel columns
-column_headers = {
-    "Name": "Full Name",
-    "email": "Email Address",
-    "ORCID": "ORCID Link",
-    "student": "Is Student",
-    "github": "GitHub",
-    "twitter": "Twitter",
-    "research_interests": "Research Interests"
+drop_filter <- function(values, name, id = NULL, sort = TRUE) {
+  values <- unlist(values)
+  if (sort) values <- sort(values)
+  tags$select(
+    # Set to undefined to clear the filter
+    onchange = sprintf(
+      "Reactable.setFilter('%s', '%s', event.target.value || undefined)",
+      id, name
+    ),
+    # "All" has an empty value to clear the filter, and is the default option
+    tags$option(value = "", "All"),
+    lapply(unique(values), tags$option),
+    "aria-label" = sprintf("Filter %s", name),
+    style = "width: 100%; height: 28px;"
+  )
 }
-people_df = people_df.rename(columns=column_headers)
+tbl_id <- "tbl-contacts"
 
-# Add clickable ORCID links
-def format_orcid(orcid):
-    if orcid:
-        return f"<a href='https://orcid.org/{orcid}' target='_blank'>{orcid}</a>"
-    return ""
+## Just for some more ideas
+grp_leaders <- c(
+  "Anna Sheppard", "Bastien Llamas", "David Adelson", "Rob Edwards",
+  "Feargal Ryan", "Fuyi Li", "Stefano Mangiola"
+)
+postdoc <- c(
+  "Alastair Ludington", "Alison Gardner", "Cathal King", "Chris Ward",
+  "Holly Pinkney", "Jacqueline Rehn", "Liza Kretzschmar", "Mark Corbett", 
+  "Michael Roach", "Stevie Pederson", "Yassine Souilmi"
+)
 
-people_df["ORCID Link"] = people_df["ORCID Link"].apply(format_orcid)
-
-# Generate vertical tabs and content for institutions
-tab_headers = []
-tab_contents = []
-
-for idx, (institute, group) in enumerate(people_df.groupby("Institute")):
-    # Create a URL-friendly tab ID
-    tab_id = institute.lower().replace(" ", "-").replace("/", "-")
-    
-    # Generate the tab header
-    active_class = "active" if idx == 0 else ""
-    tab_headers.append(f'<li class="nav-item"><a class="nav-link {active_class}" id="{tab_id}-tab" data-bs-toggle="tab" href="#{tab_id}" role="tab">{institute}</a></li>')
-
-    # Add institution URL if available
-    institution_url = institution_urls.get(institute, "")
-    url_html = f"<p><a href='{institution_url}' target='_blank'>{institution_url}</a></p>" if institution_url else ""
-    
-    # Generate the table for this institution
-    html_table = group.to_html(
-        index=False,
-        escape=False,
-        columns=[
-            "Full Name", "Email Address", "ORCID Link", "Is Student", 
-            "GitHub", "Twitter", "Research Interests"
-        ],
-        justify="center",
-        border=1,
-        classes="styled-table"
+df %>% 
+  mutate(
+    ## I'm a trainspotter. Sorry...
+    Institute = Institute %>% 
+      str_replace_all("^Adelaide$", "The University of Adelaide") %>% 
+      str_replace_all("(Australian Centre for Ancient DNA)", "ACAD (\\1)") %>% 
+      str_replace_all("BODL", "Black Ochre Data Labs") %>% 
+      str_replace_all("^CCB$", "CCB (Centre for Cancer Biology)") %>% 
+      str_replace_all("^Flinders$", "Flinders University") %>% 
+      str_replace_all("^AWRI$", "AWRI (Australian Wine Research Institute)") %>% 
+      str_replace_all("^SAGC$", "SAGC (SA Genomics Consortium)") %>% 
+      str_replace_all("^SAM$", "SA Museum"),
+    ## Just thought I'd play with a different idea
+    Position = case_when(
+      !is.na(student) ~ paste(student, "Student"),
+      Name == "Jimmy Breen" ~ "Chief Data Scientist",
+      Name %in% grp_leaders ~ "Group Leader",
+      Name %in% postdoc ~ "Postdoctoral Fellow",
+      TRUE ~ ""
+    ),
+    ## Nerd alert
+    email = ifelse(is.na(email), "", glue("<a href='mailto:{str_to_lower(email)}' target='_blank'><i class='fas fa-envelope' style='color: #6495ED;'></i></a>")),
+    Name = str_to_title(Name),
+    ## Start tidying up the social media links
+    ## We could even add a homepage option when we re-collect the info
+    ORCID = ifelse(is.na(ORCID), "", glue("https://orcid.org/{ORCID}")),
+    github = ifelse(is.na(github), "", glue("https://github.com/{github}")),
+    twitter = ifelse(is.na(twitter), "", glue("https://twitter.com/{twitter}")),
+    ## These URLs are a bit weird
+    mastadon = case_when(
+      is.na(mastadon) ~ "",
+      str_count(mastadon, "@") == 2 ~ paste0(
+        "https://", str_replace_all(mastadon, "@(.+)@(.+)", "\\2/@\\1")
+      ),
+      str_count(mastadon, "@") == 1  ~ paste0("https://mastodon.social/", mastadon),
+      TRUE ~ paste0("https://mastodon.social/@", mastadon)
+    ),
+    ## There's also some flexibility in these that needs handling
+    bluesky = case_when(
+      is.na(bluesky) ~ "",
+      str_count(bluesky, "\\.") > 0 ~ "https://bsky.app/profile/{bluesky}",
+      TRUE ~ "https://bsky.app/profile/{bluesky}.bsky.social"
     )
-    
-    # Generate the tab content, wrapping the table in a scrollable div
-    active_class = "show active" if idx == 0 else ""
-    tab_contents.append(f'<div class="tab-pane fade {active_class}" id="{tab_id}" role="tabpanel"><h4>{institute}</h4>{url_html}<div class="scrollable-table">{html_table}</div></div>')
-
-# Combine tabs into a single HTML structure
-tabs_html = f"""
-<div class="tab-container">
-    <ul class="nav nav-tabs" id="institutionTabs" role="tablist">
-        {''.join(tab_headers)}
-    </ul>
-    <div class="tab-content" id="institutionTabContent">
-        {''.join(tab_contents)}
-    </div>
-</div>
-"""
-
-# Display the final HTML with tabs
-display(HTML(tabs_html))
+  ) %>% 
+  chop(Institute) %>% # Make a list
+  dplyr::rename(mastodon = mastadon, orcid = ORCID) %>% # Mastodon is mispelt. Whoops Dave
+  nest(social = c(orcid, github, twitter, bluesky, mastodon)) %>% 
+  dplyr::select(Name, Position, Institute, email, everything()) %>% 
+  arrange(Name) %>% 
+  mutate(
+    social = social %>% 
+      lapply(as.list) %>% 
+      lapply(\(x) x[!map_lgl(x, \(y) y == "")])
+  ) %>% 
+  reactable(
+    showPageSizeOptions = TRUE, filterable = TRUE,
+    columns = list(
+      Name = colDef("Name"),
+      Position = colDef(
+        filterInput = \(values) drop_filter(values, "Position", tbl_id)
+      ),
+      student = colDef(show = FALSE),
+      Institute = colDef(
+        "Institute", 
+        filterInput = \(values) drop_filter(values, "Institute", tbl_id)
+      ),
+     email = colDef(
+      name = "Email",
+      html = TRUE, # Enable HTML rendering for clickable links
+      cell = function(value) HTML(value) # Render the email link as HTML
+    ),
+      enabled = colDef(show = FALSE),
+      added = colDef(show = FALSE),
+      social = colDef(
+        "External Links", maxWidth = 100, filterable = FALSE,
+        cell = \(value) {
+          out <- names(value) %>% 
+            lapply(
+              \(x) {
+                col <- c(
+                  orcid = "#9b0", github = "#000", twitter = "#39d",
+                  bluesky = "#09f", mastodon = "#55f"
+                )
+                tags$a(
+                  style = sprintf("color: %s", col[[x]]),
+                  shiny::icon(x), href = value[[x]], target = "_blank"
+                )
+              }
+            )
+          tagList(out)
+        },
+        html = TRUE
+      ),
+      research_interests = colDef("Key Interests")
+    ),
+    elementId = tbl_id,
+    theme = reactableTheme(
+      headerStyle = list(
+      backgroundColor = "#95b540", # Background color for all headers
+      color = "#ffd984",            # Text color for all headers
+      fontWeight = "bold",        # Bold text
+      textAlign = "left",         # Align text to the left
+      borderBottom = "1px solid #ddd", # Subtle border below headers
+      fontSize = "14px"           # Font size for headers
+    ),
+    style = list(
+    fontSize = "13px"           # Font size for the table body
+  )
+ )
+)
 ```
